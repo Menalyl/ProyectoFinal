@@ -1,13 +1,10 @@
-//https://www.eclipse.org/paho/clients/js/
-
-
 function ACTIVAR() {
 	
 	console.log("ACTIVAR");
         message = new Paho.MQTT.Message("ACTIVADO");
         message.destinationName = "menalyluzuriaga@gmail.com/test1";
         client.send(message);
-		document.getElementById("estado").innerHTML="Activado"
+		
 		        
   
 }
@@ -18,7 +15,7 @@ function DESACTIVAR(){
         message = new Paho.MQTT.Message("DESACTIVADO");
         message.destinationName = "menalyluzuriaga@gmail.com/test1";
         client.send(message);
-		document.getElementById("estado").innerHTML="Desactivado"
+	
 		
 }
 function ENVIAR(){	
